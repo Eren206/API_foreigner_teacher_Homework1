@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  api_foreigner_teacher:
+    image: ${DOCKER_REGISTRY-}apiforeignerteacher
+    build:
+      context: .
+      dockerfile: Dockerfile
